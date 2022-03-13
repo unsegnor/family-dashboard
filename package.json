@@ -1,0 +1,42 @@
+{
+  "name": "new-app-template",
+  "version": "1.1.56",
+  "description": "New application schema",
+  "main": "index.js",
+  "devDependencies": {
+    "@stryker-mutator/core": "5.6.1",
+    "@stryker-mutator/mocha-runner": "5.6.1",
+    "chai": "4.3.6",
+    "cucumber": "6.0.5",
+    "mocha": "9.2.2"
+  },
+  "scripts": {
+    "test": "npm run test-mocha && npm run test-cucumber",
+    "test-mocha": "npm run test-doubles && npm run test-domain && npm run test-adapters && npm run test-integration && npm run test-mutation",
+    "test-domain": "mocha domain --recursive",
+    "test-doubles": "mocha test-doubles --recursive",
+    "test-adapters": "mocha adapters --recursive",
+    "test-integration": "mocha test-integration --recursive",
+    "test-mutation": "npx stryker run",
+    "test-cucumber": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unsegnor/new-app.git"
+  },
+  "keywords": [
+    "New",
+    "app",
+    "test",
+    "BDD",
+    "gherkins",
+    "cucumber",
+    "CI"
+  ],
+  "author": "Víctor Calatayud Asensio",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/unsegnor/new-app/issues"
+  },
+  "homepage": "https://github.com/unsegnor/new-app#readme"
+}
