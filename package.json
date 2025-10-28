@@ -1,6 +1,6 @@
 {
   "name": "new-app-template",
-  "version": "1.1.78",
+  "version": "1.1.79",
   "description": "New application schema",
   "main": "index.js",
   "devDependencies": {
